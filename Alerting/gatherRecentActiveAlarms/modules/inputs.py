@@ -3,7 +3,7 @@ def startTime():
     print('Setting Timers...')
     print('--------------')
     # SET TIMER
-    seconds_back = 300
+    seconds_back = 28800
 
     return seconds_back
 
@@ -22,7 +22,7 @@ def filterParameters():
     4 = alarm and ackReq
     5 = All (no filter)
     '''
-    state = 4
+    state = 1
     '''
     excludeSubpolicies
     0 = False (default) = alarms are included
