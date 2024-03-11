@@ -1,0 +1,22 @@
+{
+  "replace_all": true,
+  "complete": true,
+  "upserts": [
+{% for populator in elastisearch %}
+    {
+      "value": "{{ populator._source['service'] }}",
+      "criteria": [
+        {
+          "direction": "SRC",
+          "addr": ["{{ populator._source['ip'] }}"],
+          "dimension_id": "test"
+        }
+       ]
+{% if not loop.last %}
+    },
+{% else %}
+    }
+{% endif %}
+{% endfor %}
+      ]
+}

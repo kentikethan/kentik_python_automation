@@ -51,6 +51,7 @@ def main():
 
     if response.status_code != 200:
         print(f'ERROR - Status Code: {response.status_code}')
+        print(f'MESSAGE - {response.text}')
         sys.exit()
 
     response_dict = response.json()

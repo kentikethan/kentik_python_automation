@@ -1,0 +1,68 @@
+[
+    {
+    "_index" : "neteng-bedev2",
+    "_type" : "_doc",
+    "_id" : "3e722cae779c90a4c7a98a79fa120f844127b6c06662bd629b2743bf5f1fc6ca",
+    "_score" : 1.0,
+    "_source" : {
+      "hostname" : "chi2-lapp15",
+      "cell_id" : "none",
+      "cell_node_group" : "precell-nomad-client",
+      "datacenter" : "chi2",
+      "dc" : "chi1",
+      "region" : "us-central",
+      "status" : "Live",
+      "ip" : "10.138.6.216",
+      "rack" : "EB07",
+      "pod" : "Pod1",
+      "service" : [
+        "private-servers-gateway",
+        "gocast-chi2",
+        "content-filter",
+        "universal-app-compliance-service",
+        "dnscollector-chi1-main",
+        "avatar",
+        "device-performance-filtering",
+        "jaeger-agent-linux",
+        "game-internationalization-ingest-processor",
+        "ssdip-gamecatalog-universe-migration-documents",
+        "contacts-api",
+        "thumbnails-coordinator",
+        "email-addresses",
+        "floodchecker-farm-8",
+        "playsession-aggregation-processor",
+        "floodchecker-farm-3",
+        "fluentbit-kafka-chi1-telemetry-main",
+        "fluentbit-kafka-chi1-telemetry-telegraf"
+      ],
+      "collection_time" : "2023-09-25T18:07:26.538539"
+    }
+    },
+    {
+    "_index" : "neteng-bedev2",
+    "_type" : "_doc",
+    "_id" : "3e722cae779c90a4c7a98a79fa120f844127b6c06662bd629b2743bf5f1fc6ca",
+    "_score" : 1.0,
+    "_source" : {
+      "hostname" : "chi2-lapp15",
+      "cell_id" : "none",
+      "cell_node_group" : "precell-nomad-client",
+      "datacenter" : "chi2",
+      "dc" : "chi1",
+      "region" : "us-central",
+      "status" : "Live",
+      "ip" : "10.138.6.217",
+      "rack" : "EB08",
+      "pod" : "Pod2",
+      "service" : [
+        "private-servers-gateway",
+        "gocast-chi2",
+        "content-filter",
+        "universal-app-compliance-service",
+        "dnscollector-chi1-main",
+        "avatar"
+      ],
+      "collection_time" : "2023-09-25T18:07:26.538539"
+    }
+    }
+]
