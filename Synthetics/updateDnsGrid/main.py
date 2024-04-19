@@ -4,6 +4,7 @@ import requests
 import yaml
 from pprint import pprint
 import json
+import sys
 
 def gather_parameters():
     print("Gathering user parameters...")
@@ -62,9 +63,15 @@ def update_dns_grid(test_id,ip_list,test_data):
  
 def main():
     print("Main Function")
-    with open('ip_list.yml', 'r') as file: 
-        ip_list = yaml.safe_load(file)
-    test_id = collect_current_test('All the DNS')
+    if len(sys.argv) == 2:
+        file_name = sys.argv[1]
+    else:
+        sys.exit("ERROR: No Configuration File Included...")
+    with open(file_name, 'r') as file: 
+        config = yaml.safe_load(file)
+        ip_list = config['ip_list']
+        test_name = config['test_name']
+    test_id = collect_current_test(test_name)
     test_data = gather_current_test_config(test_id)
     update_dns_grid(test_id,ip_list,test_data)
 
