@@ -1,0 +1,5 @@
+---
+test_name: # Name of the test to be edited. 
+ip_list:
+  - #IP 1
+  - #IP 2
