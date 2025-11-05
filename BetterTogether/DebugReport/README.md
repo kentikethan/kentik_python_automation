@@ -1,0 +1,1 @@
+This program will automatically run a query to data explorer for a particular entity and provide a list of source ip addresses. This list of source IP address will be stored in cache and used to create a IP grid synthetic test. 
